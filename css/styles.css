@@ -6,6 +6,7 @@
    --brand-primary-grey-color: #2F303A;  
    --brand-secondary-white-color: #F5F4FA;
    --brand-white-text-color: #ffffff;
+   --icons-grey: #AFB1B8;
 }
 
 * {
@@ -254,12 +255,12 @@ body {
    text-align: center;
 }
 
-/*our team section*/
+/*Seccion 4 our team*/
 
 .section-our-team {
    background-color: var(--brand-secondary-white-color);
    width: 100%;
-   padding: 94px 200px
+   padding: 94px 200px;
    
 }
 
@@ -273,7 +274,7 @@ body {
 .team-photos {
    background-color: var(--brand-white-text-color);
    width: 270px;
-   height: 368px;
+   height: 428px;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
 
@@ -285,11 +286,103 @@ body {
    text-align: center;
 }
 
+.team-icon-container {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 30px;
+   gap: 10px;
+
+}
+
+.team-icon-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 25px;
+   height: 44px;
+   width: 44px;
+   outline: none;  
+}
+
+.team-icon-link:hover {
+   background: var(--brand-primary-blue-color);
+   fill:var(--brand-primary-white-color);
+}
+
+.team-icons {
+   width: 20px;
+   height: 20px;
+   
+   
+}
+
+.team-icons:hover {
+   fill: var(--brand-primary-white-color)
+}
+
+
+
+/*Falta poner el hover de team icons*/
+
+
+
+
+
+
+/*section regular customers*/
+
+.cus-section {
+   width: 100%;
+
+}
+.cus-icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   
+
+}
+
+.cus-icons-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 170px;
+   height: 81px;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+}
+
+ .icons {
+   width: 106px;
+   height: 53px;
+   
+
+
+}
+
+
+
+
+
 /*footer*/
+
+.footer-container  {
+display: flex;
+align-items:center;
+justify-content: flex-start;
+gap: 70px;
+
+}
 
 .address {
    font-style: normal;
    color: var(--brand-white-text-color);
+}
+
+.logo-footer {
+   font-style: normal;
 }
 
 .footer-link  {
@@ -304,8 +397,67 @@ body {
 .footer-contact  {
    color: rgba(255, 255, 255, 0.6);
    font-style: normal;
+   
+}
+
+
+
+/*footer icons*/
+
+
+.find-text {
+   color: var(--brand-white-text-color);
+   text-transform: uppercase;
+}
+
+
+.find-icon-container  {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
 
 }
+
+
+.find-icon-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 25px;
+   height: 44px;
+   width: 44px;
+   outline: none;
+   background: rgba(255, 255, 255, 0.1);
+   
+}
+
+.find-icon-link:hover {
+   background-color:var(--brand-primary-blue-color);
+}
+
+
+.find-icon {
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------------------------------------------------------------------------*/
 
