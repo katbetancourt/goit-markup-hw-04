@@ -23,20 +23,12 @@ body {
  }
 
  header {
-   background-color: var(--brand-white-text-color);
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
-   border: 1px solid #ECECEC;
    width: 100%;
-   height: 80px;
-   padding: 0px 200px;
  }
 
  footer {
    background-color: var(--brand-primary-grey-color);
-   width: 100%;
-   padding: 60px 200px;
+   padding: 60px 0px;
  }
 
  a {
@@ -78,12 +70,27 @@ body {
  }
  
  .container {
-   width: 100%;
+   max-width: 1200px;
+   padding: 0px 15px;
+   margin: 0px auto;
    
    
  }
 
  /*nav menu*/
+
+ .header-content {
+   background-color: var(--brand-white-text-color);
+   display: flex;
+   align-items: center;
+   
+   border-bottom: 1px solid #ECECEC;
+   height: 80px;
+   justify-content: space-between;
+   max-width: 1200px;
+   /* padding: 0px 200px; */
+
+ }
 
 .header-nav {
    display: flex;
@@ -107,6 +114,8 @@ body {
    line-height: 1.14;
 }
 
+
+.link-nav:focus,
 .link-nav:hover {
    color: var(--brand-primary-blue-color);
 
@@ -119,12 +128,15 @@ body {
    letter-spacing: 0.02em;
 }
 
+
 .icon {
    width: 16px;
    height: 12px;
    stroke: var(--brand-color-text);
 }
 
+
+.icon:focus,
 .icon:hover {
    stroke: var(--brand-primary-blue-color);
 }
@@ -136,17 +148,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--brand-primary-grey-color);
-    width: 100%;
     height: 600px;
-    left: 0px;
-    top: 80px;
+    
     background-image: linear-gradient(
     to right, 
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
-    url(/images/imagen17.jpg);
+    url(../images/imagen17.jpg);
     background-color: #c4c4c4;
-    background-size: cover;
     }
     
 .main-button {
@@ -165,24 +174,31 @@ body {
    cursor: pointer;
     
 }
-
-.main-button:hover {
+.main-button:focus,
+.main-button:hover  {
    background: #2196F3;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px; 
 }
 
+
+
 /*section about*/
+
 .section-about {
-   width: 100%;
-   padding: 95px 200px;
+   padding-top: 94px;
 }
 
 
 .display-about {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    gap: 30px;
+}
+
+.display-card {
+   width: 270px;
+
 }
 
 
@@ -192,7 +208,7 @@ body {
    justify-content: center;
    flex-direction:row;
    background: #F5F4FA;
-   
+   width: 270px;
    height: 120px;
 
 }
@@ -304,28 +320,28 @@ body {
    outline: none;  
 }
 
+.team-icon-link:focus,
 .team-icon-link:hover {
    background: var(--brand-primary-blue-color);
-   fill:var(--brand-primary-white-color);
 }
+
 
 .team-icons {
    width: 20px;
    height: 20px;
-   
-   
-}
+   fill: #AFB1B8;
+   }
 
+
+.team-icons:focus,
 .team-icons:hover {
-   fill: var(--brand-primary-white-color)
-}
+   fill: var(--brand-primary-white-color);
 
+}
+   
 
 
 /*Falta poner el hover de team icons*/
-
-
-
 
 
 
@@ -354,12 +370,21 @@ body {
    border-radius: 4px;
 }
 
+.cus-icons-container:focus,
+.cus-icons-container:hover {
+   border: 1px solid var(--brand-primary-blue-color);
+
+}
+
  .icons {
+   fill: #AFB1B8;
    width: 106px;
    height: 53px;
-   
+}
 
-
+.icons:focus,
+.icons:hover {
+   fill: var(--brand-primary-blue-color);
 }
 
 
@@ -389,6 +414,7 @@ gap: 70px;
     color: rgba(255, 255, 255, 0.6);   
 }
 
+.footer-link:focus,
 .footer-link:hover {
    color: var(--brand-primary-blue-color);
 
@@ -432,6 +458,7 @@ gap: 70px;
    
 }
 
+.find-icon-link:focus,
 .find-icon-link:hover {
    background-color:var(--brand-primary-blue-color);
 }
@@ -440,7 +467,7 @@ gap: 70px;
 .find-icon {
     width: 20px;
     height: 20px;
-
+    fill: var(--brand-primary-white-color);
 }
 
 
@@ -527,6 +554,8 @@ gap: 70px;
    cursor: pointer;
 }
 
+
+.projects:focus,
 .projects:hover {
    background: #FFFFFF;
    border: 1px solid #EEEEEE;
