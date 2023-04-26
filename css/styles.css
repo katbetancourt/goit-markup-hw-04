@@ -84,7 +84,7 @@ body {
    display: flex;
    align-items: center;
    
-   border-bottom: 1px solid #ECECEC;
+   /* border-bottom: 1px solid #ECECEC; */
    height: 80px;
    justify-content: space-between;
    max-width: 1200px;
@@ -335,7 +335,7 @@ body {
 
 .team-icons:focus,
 .team-icons:hover {
-   fill: var(--brand-primary-white-color);
+   fill: #ffffff;
 
 }
    
@@ -494,7 +494,9 @@ gap: 70px;
 /*buttons*/
 .section-projects {
    width: 100%;
-   padding: 94px 200px 34px 200px;
+   padding-top: 94px;
+   padding-bottom: 50px;
+   /* padding: 94px 200px 34px 200px; */
 
 }
 
@@ -518,6 +520,8 @@ gap: 70px;
 
 }
 
+
+.project-buttons:focus,
 .project-buttons:hover {
    background-color: var(--brand-primary-blue-color);
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -534,7 +538,8 @@ gap: 70px;
 /* container bg cards*/
 .project-cards-section {
    width: 100%;
-   padding: 0px 200px 82px 200px;
+   padding-top: 50px;
+   /* padding: 0px 200px 82px 200px; */
 }
 
 .project-cards {
